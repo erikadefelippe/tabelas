@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabela completa</title>
+    <style>
+        table{
+            width: 550px;
+            border-collapse: collapse;
+        }
+        td, th{
+            padding: 5px;
+            border: 2px solid black;
+        }
+        th.mulher{
+            background-color: #ec86ad;
+        }
+        th.homem{
+            background-color: rgb(135, 213, 236);
+        }
+        th.titulo{
+            background-color: #f1f1f1;
+        }
+        caption{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 22px;
+            padding: 15px;
+            font-weight: 800;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption> Filmes Favoritos dos últimos 20 anos</caption>
+        <thead>
+            <tr>
+                <th class="titulo" scope="col">Grupo</th>
+                <th class="titulo" scope="col">Nomes</th>
+                <th class="titulo" scope="colgroup" colspan="3">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th class="mulher" scope="rowgroup" rowspan="4">Mulheres</th>
+            </tr>
+            <tr>
+                <td>Ana Silva</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Laura Souza</td>
+                <td>Hulk</td>
+                <td>Batman</td>
+                <td>Sandman</td>
+            </tr>
+            <tr>
+                <td>Luiza Florença</td>
+                <td>O Grinch</td>
+                <td>7 Vidas</td>
+                <td>Corra!</td>
+            </tr>
+            <tr>
+                <th class="homem" scope="rowgroup" rowspan="4">Homens</th>
+            </tr>
+            <tr>
+                <td>Luiz Silva</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Paulo Souza</td>
+                <td>Hulk</td>
+                <td>Batman</td>
+                <td>Sandman</td>
+            </tr>
+            <tr>
+                <td>Tito Florença</td>
+                <td>O Grinch</td>
+                <td>7 Vidas</td>
+                <td>Corra!</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
